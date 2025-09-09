@@ -1,0 +1,370 @@
+/* Reset básico - Mantido */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página - Aprimorado */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+/* Container principal - Aprimorado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Menu - Aprimorado */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+    background-color: rgba(255, 153, 0, 0.1);
+}
+
+/* Hero Section - Aprimorada */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.hero-content h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.hero-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    color: #ff9900;
+    font-weight: 500;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid #ff9900;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Botão - Aprimorado */
+.btn {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Seções - Aprimoradas */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #222;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #ff9900;
+    border-radius: 2px;
+}
+
+/* Skills - Aprimorada */
+.skills {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: #333;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.skills li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    background-color: #444;
+}
+
+/* Cards de portfólio - Aprimorados */
+.portifolio-destaque {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.portifolio-destaque-divider{
+    grid-column: 1 / -1;
+    height: 2px;
+    background: #ff9900;
+    margin: 20px 0;
+    border-radius: 1px;
+}
+
+.card {
+    margin-top: 20%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid #ff9900;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.card p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Contato rápido - Aprimorado */
+.contato-rapido {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #eee;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contato-rapido p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 1.1rem;
+}
+
+/* Footer redes sociais - Aprimorado */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff9900;
+    transform: translateY(-3px);
+}
+
+/* Espaçamento da seção Sobre */
+.sobre p,
+.sobre ul,
+.sobre h3 {
+    margin-bottom: 25px; /* aumenta o espaço entre cada tópico */
+}
+
+.redes-sociais{
+    padding: 0 !important;
+    margin-bottom: -3% !important;
+}
+
+/* Campos do formulário - largura em % e tamanho adequado */
+form input,
+form textarea {
+    width: 90%;          /* usa 90% da largura do container */
+    max-width: 500px;    /* não cresce demais em telas grandes */
+    padding: 5px 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Foco nos campos */
+form input:focus,
+form textarea:focus {
+    border-color: #ff9900;
+    box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
+}
+
+/* Placeholder estilizado */
+form input::placeholder,
+form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Ajuste para textarea */
+form textarea {
+    resize: vertical;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+
+
+/* Responsividade - Nova adição */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .portifolio-destaque {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills {
+        justify-content: flex-start;
+    }
+    
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
