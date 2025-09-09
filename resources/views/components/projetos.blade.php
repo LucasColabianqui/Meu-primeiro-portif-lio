@@ -5,7 +5,7 @@
             'titulo' => 'Site Pessoal',
             'descricao' => 'Minha página pessoal construída com Laravel e CSS moderno.',
             'imagem' => 'images/Captura de tela 2025-09-09 142540.png',
-            'link' => 'https://github.com/seuusuario/site-pessoal'
+            'link' => 'https://github.com/LucasColabianqui/Meu-primeiro-portif-lio'
         ],
         [
             'titulo' => 'Hamburgueria',
